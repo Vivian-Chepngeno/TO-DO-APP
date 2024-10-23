@@ -1,0 +1,12 @@
+<h3>Update Task</h3>
+
+<form method="POST">
+  {% csrf_token %}
+  <!-- Important for form security -->
+
+  <!-- Render the form fields -->
+  {{ form.as_p }}
+
+  <!-- Submit button -->
+  <button type="submit">Update Task</button>
+</form>
