@@ -1,0 +1,9 @@
+<h3>Delete Task</h3>
+
+<p>Are you sure you want to delete "{{ task.title }}"?</p>
+
+<form method="POST">
+  {% csrf_token %}
+  <button type="submit">Yes, delete</button>
+  <a href="{% url 'list' %}">Cancel</a>
+</form>
